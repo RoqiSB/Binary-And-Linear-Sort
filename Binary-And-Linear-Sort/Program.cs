@@ -74,6 +74,12 @@ namespace  SeacrhAlgorthm
 
             } while ((ch == 'y') || (ch == 'Y'));
         }
+        public void LinearSeacrh()
+        {
+            char ch;
+            //search for number of comparison
+            int ctr;
 
+        }
     }
 }
