@@ -102,5 +102,50 @@ namespace  SeacrhAlgorthm
                 ch = char.Parse(Console.ReadLine());
             } while ((ch == 'y') || (ch == 'Y'));
         }
+        static void Main(string[] args)
+        {
+            Program myList = new Program();
+            int pilihanmenu;
+            do
+            {
+                Console.WriteLine("Menu Option");
+                Console.WriteLine("================");
+                Console.WriteLine("1.Linear Seacrh");
+                Console.WriteLine("2.Binary Seacrh");
+                Console.WriteLine("3.Exit");
+                Console.Write("Enter your choice (1,2,3) : ");
+                pilihanmenu = Convert.ToInt32(Console.ReadLine());
+
+                switch (pilihanmenu)
+                {
+                    case 1:
+                        Console.WriteLine("");
+                        Console.WriteLine("-----------------------------");
+                        Console.WriteLine("Linear Seacrh");
+                        Console.WriteLine("-----------------------------");
+                        myList.input();
+                        myList.LinearSearch();
+                        break;
+                    case 2:
+                        Console.WriteLine("");
+                        Console.WriteLine("-----------------------------");
+                        Console.WriteLine("Binary Search");
+                        Console.WriteLine("-----------------------------");
+                        myList.input();
+                        myList.BinarySeacrh();
+                        break;
+                    case 3:
+
+                        Console.WriteLine("Exit.");
+                        break;
+                    default:
+                        Console.WriteLine("Error");
+                        break;
+                }
+                //to exit from the console
+                Console.WriteLine("\n\nPress Return to Exit.");
+                Console.ReadLine();
+            } while (pilihanmenu != 3);
+        }
     }
 }
