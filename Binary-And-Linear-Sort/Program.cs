@@ -22,14 +22,14 @@ namespace  SeacrhAlgorthm
                 if ((n > 0) && (n <= 20))
                         break;
                 else
-                    Console.Write("\nArray should have minimum 1 and maximum 20 elements.\n");
+                    Console.WriteLine("\nArray should have minimum 1 and maximum 20 elements.\n");
             }
             //Accept array elements
             Console.WriteLine("");
             Console.WriteLine("----------------------");
             Console.WriteLine(" Enter array elements ");
             Console.WriteLine("----------------------");
-            for (i = 0; i < n; i++);
+            for (i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
@@ -54,7 +54,7 @@ namespace  SeacrhAlgorthm
                 int ctr = 1;
 
                 //loop to search for the elements int the array
-                while ((item != arr[mid]) && (lowerbound <= upperbound)) ;
+                while ((item != arr[mid]) && (lowerbound <= upperbound)) 
                 {
                     if (item > arr[mid])
                         lowerbound = mid + 1;
